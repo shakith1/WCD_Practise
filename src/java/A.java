@@ -29,5 +29,12 @@ public class A extends HttpServlet{
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
        resp.getWriter().write("OK");
     }
+
+    @Override
+    public void init() throws ServletException {
+        System.out.println("Initialization");
+    }
+    
+    
     
 }
