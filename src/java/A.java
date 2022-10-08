@@ -54,6 +54,8 @@ public class A extends HttpServlet {
 
         ServletContext context = getServletContext();
         ServletContext servletContext = getServletConfig().getServletContext();
+        
+        System.out.println(context.getInitParameter("app"));
     }
 
     @Override
