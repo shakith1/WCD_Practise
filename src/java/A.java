@@ -17,17 +17,17 @@ import javax.servlet.http.HttpServletResponse;
  */
 //@WebServlet(name = "A",urlPatterns = {"/A","/B"})
 public class A extends HttpServlet{
-
+int x = 0;
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 //        resp.getWriter().write("HEllo");
 //        super.doGet(req, resp);
 //        resp.getWriter().write("OK");
-    }
 
-    @Override
-    protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-       resp.getWriter().write("OK");
+        x = x+1;
+        System.out.println(x);
+        
+        
     }
 
     @Override
