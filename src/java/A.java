@@ -1,5 +1,6 @@
 
 import java.io.IOException;
+import java.util.Enumeration;
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -11,14 +12,15 @@ import javax.servlet.http.HttpServletResponse;
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-
 /**
  *
  * @author Shakith
  */
 //@WebServlet(name = "A",urlPatterns = {"/A","/B"})
-public class A extends HttpServlet{
-int x = 0;
+public class A extends HttpServlet {
+
+    int x = 0;
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 //        resp.getWriter().write("HEllo");
@@ -31,14 +33,18 @@ int x = 0;
 //        System.out.println(this);
 //        System.out.println(req);
 //        System.out.println(Thread.currentThread());
-
-        
         String name = getInitParameter("name");
         System.out.println(name);
-        
+
         String name1 = getServletConfig().getInitParameter("name");
         System.out.println(name);
-        
+
+        Enumeration<String> names = getInitParameterNames();
+        while (names.hasMoreElements()) {
+            String nextElement = names.nextElement();
+            System.out.println(nextElement);
+        }
+
     }
 
     @Override
@@ -46,11 +52,10 @@ int x = 0;
         System.out.println("OK");
     }
 
-//    @Override
+//    @Override 
 //    public void init(ServletConfig config) throws ServletException {
 //        System.out.println("A");
 //    }
-
     @Override
     public void destroy() {
         System.out.println("Destroy");
@@ -60,9 +65,4 @@ int x = 0;
 //    protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 //        System.out.println("AA");
 //    }
-
-    
-    
-    
-    
 }
