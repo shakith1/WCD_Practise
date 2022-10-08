@@ -43,6 +43,7 @@ public class A extends HttpServlet {
         while (names.hasMoreElements()) {
             String nextElement = names.nextElement();
             System.out.println(nextElement);
+            System.out.println(getInitParameter(nextElement));
         }
 
     }
