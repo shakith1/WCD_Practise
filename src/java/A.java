@@ -3,6 +3,7 @@ import java.io.IOException;
 import java.util.Enumeration;
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebInitParam;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -16,7 +17,10 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Shakith
  */
-//@WebServlet(name = "A",urlPatterns = {"/A","/B"})
+@WebServlet(name = "A",urlPatterns = {"/A"},
+        initParams = {
+            @WebInitParam(name = "name",value = "Shakith")
+        })
 public class A extends HttpServlet {
 
     int x = 0;
