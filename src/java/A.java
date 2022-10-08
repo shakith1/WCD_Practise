@@ -32,7 +32,12 @@ int x = 0;
 //        System.out.println(req);
 //        System.out.println(Thread.currentThread());
 
-        System.out.println("OKl");
+        
+        String name = getInitParameter("name");
+        System.out.println(name);
+        
+        String name1 = getServletConfig().getInitParameter("name");
+        System.out.println(name);
         
     }
 
@@ -51,10 +56,10 @@ int x = 0;
         System.out.println("Destroy");
     }
 
-    @Override
-    protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println("AA");
-    }
+//    @Override
+//    protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+//        System.out.println("AA");
+//    }
 
     
     
