@@ -2,6 +2,7 @@
 import java.io.IOException;
 import java.util.Enumeration;
 import javax.servlet.ServletConfig;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebInitParam;
 import javax.servlet.annotation.WebServlet;
@@ -51,6 +52,8 @@ public class A extends HttpServlet {
             System.out.println(getInitParameter(nextElement));
         }
 
+        ServletContext context = getServletContext();
+        ServletContext servletContext = getServletConfig().getServletContext();
     }
 
     @Override
