@@ -8,6 +8,10 @@
     <servlet>
         <servlet-name>A</servlet-name>
         <servlet-class>A</servlet-class>
+        <init-param>
+            <param-name>name</param-name>
+            <param-value>Shakith</param-value>
+        </init-param>
     </servlet>
     
     <servlet>
