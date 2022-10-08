@@ -18,7 +18,6 @@ import javax.servlet.annotation.WebServlet;
  * @author Shakith
  */
 
-@WebServlet(name = "B",urlPatterns = {"/B"})
 public class B extends GenericServlet{
 
     @Override
@@ -28,32 +27,5 @@ public class B extends GenericServlet{
     
 }
 
-@WebServlet(urlPatterns = "/C")
-class C implements Servlet{
-    
-    @Override
-    public void init(ServletConfig config) throws ServletException {
-       
-    }
 
-    @Override
-    public ServletConfig getServletConfig() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
 
-    @Override
-    public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
-       res.getWriter().write("OK");
-    }
-
-    @Override
-    public String getServletInfo() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    @Override
-    public void destroy() {
-     
-    }
-    
-}
