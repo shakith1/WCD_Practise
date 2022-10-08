@@ -19,7 +19,8 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebServlet(name = "A",urlPatterns = {"/A"},
         initParams = {
-            @WebInitParam(name = "name",value = "Shakith")
+            @WebInitParam(name = "name",value = "Shakith"),
+            @WebInitParam(name = "age",value = "20")
         })
 public class A extends HttpServlet {
 
