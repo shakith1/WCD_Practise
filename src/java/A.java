@@ -20,9 +20,14 @@ public class A extends HttpServlet{
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.getWriter().write("HEllo");
-        super.doGet(req, resp);
-        resp.getWriter().write("OK");
+//        resp.getWriter().write("HEllo");
+//        super.doGet(req, resp);
+//        resp.getWriter().write("OK");
+    }
+
+    @Override
+    protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+       resp.getWriter().write("OK");
     }
     
 }
