@@ -5,14 +5,14 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
     
-<!--    <servlet>
+    <servlet>
         <servlet-name>A</servlet-name>
         <servlet-class>A</servlet-class>
         <init-param>
             <param-name>name</param-name>
             <param-value>Shakith</param-value>
         </init-param>
-    </servlet>-->
+    </servlet>
     
     <servlet>
         <servlet-name>B</servlet-name>
@@ -23,11 +23,11 @@
         <servlet-name>B</servlet-name>
         <url-pattern>/B</url-pattern>
     </servlet-mapping>
-<!--    
+    
         <servlet-mapping>
         <servlet-name>A</servlet-name>
         <url-pattern>/A</url-pattern>
-    </servlet-mapping>-->
+    </servlet-mapping>
     
         <servlet>
         <servlet-name>C</servlet-name>
