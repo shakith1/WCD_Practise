@@ -17,10 +17,10 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Shakith
  */
-@WebServlet(name = "A",urlPatterns = {"/A"},
+
+@WebServlet(urlPatterns = {"D","/A"},
         initParams = {
-            @WebInitParam(name = "name",value = "Shakith"),
-            @WebInitParam(name = "age",value = "20")
+            @WebInitParam(name = "age",value = "10")
         })
 public class A extends HttpServlet {
 
