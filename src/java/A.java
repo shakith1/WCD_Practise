@@ -44,6 +44,11 @@ int x = 0;
 //        System.out.println("A");
 //    }
 
+    @Override
+    public void destroy() {
+        System.out.println("Destroy");
+    }
+
     
     
     
