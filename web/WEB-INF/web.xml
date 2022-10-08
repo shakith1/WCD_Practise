@@ -20,6 +20,11 @@
         <url-pattern>/B</url-pattern>
     </servlet-mapping>
     
+        <servlet-mapping>
+        <servlet-name>A</servlet-name>
+        <url-pattern>/A</url-pattern>
+    </servlet-mapping>
+    
     <session-config>
         <session-timeout>
             30
