@@ -1,5 +1,6 @@
 
 import java.io.IOException;
+import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -27,13 +28,22 @@ int x = 0;
         x = x+1;
         System.out.println(x);
         
+        System.out.println(this);
+        System.out.println(req);
+        System.out.println(Thread.currentThread());
         
     }
 
     @Override
     public void init() throws ServletException {
-        System.out.println("Initialization");
+        System.out.println("OK");
     }
+
+//    @Override
+//    public void init(ServletConfig config) throws ServletException {
+//        System.out.println("A");
+//    }
+
     
     
     
