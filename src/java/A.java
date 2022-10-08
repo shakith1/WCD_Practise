@@ -25,12 +25,14 @@ int x = 0;
 //        super.doGet(req, resp);
 //        resp.getWriter().write("OK");
 
-        x = x+1;
-        System.out.println(x);
-        
-        System.out.println(this);
-        System.out.println(req);
-        System.out.println(Thread.currentThread());
+//        x = x+1;
+//        System.out.println(x);
+//        
+//        System.out.println(this);
+//        System.out.println(req);
+//        System.out.println(Thread.currentThread());
+
+        System.out.println("OKl");
         
     }
 
@@ -49,6 +51,12 @@ int x = 0;
         System.out.println("Destroy");
     }
 
+    @Override
+    protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        System.out.println("AA");
+    }
+
+    
     
     
     
