@@ -33,7 +33,7 @@ class C implements Servlet{
     
     @Override
     public void init(ServletConfig config) throws ServletException {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+       
     }
 
     @Override
