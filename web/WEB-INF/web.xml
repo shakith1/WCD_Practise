@@ -15,6 +15,20 @@
     </servlet>
     
     <servlet>
+        <servlet-name>D</servlet-name>
+        <servlet-class>A</servlet-class>
+        <init-param>
+            <param-name>name</param-name>
+            <param-value>Nimsara</param-value>
+        </init-param>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>D</servlet-name>
+        <url-pattern>/D</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
         <servlet-name>B</servlet-name>
         <servlet-class>B</servlet-class>
     </servlet>
