@@ -28,6 +28,7 @@ public class B extends GenericServlet{
     
 }
 
+@WebServlet(urlPatterns = "/C")
 class C implements Servlet{
     
     @Override
@@ -42,7 +43,7 @@ class C implements Servlet{
 
     @Override
     public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+       res.getWriter().write("OK");
     }
 
     @Override
